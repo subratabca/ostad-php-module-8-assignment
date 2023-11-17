@@ -1,0 +1,13 @@
+Step 1: Install Laravel Project By Below Command:
+   -> composer create-project laravel/laravel my-app
+
+
+Step 2: Generate UserController By Below Command:
+   -> php artisan make:controller UserController
+
+Step 3: Create Below Route Inside routes/web.php:
+   -> use App\Http\Controllers\UserController;
+   -> Route::get('/hello', [UserController::class, 'hello']);
+
+Step 4: Start Laravel Development Server By Below Command:
+   -> php artisan serve
